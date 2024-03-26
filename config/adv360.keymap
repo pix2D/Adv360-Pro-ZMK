@@ -75,6 +75,6 @@
         &kp AT   &kp LT    &kp PIPE  &kp MINUS &kp GT     &kp SLASH                             &trans &trans                     &kp BSLH  &kp PERCENT &trans   &kp COLON &kp DOT   &trans
         &trans   &trans    &trans    &trans    &trans                      &kp PERCENT &kp BSLH &trans &trans &trans &trans                  &trans     &trans   &trans    &trans    &trans
       >;
-    }
+    };
   };
 };
