@@ -26,7 +26,7 @@
           ignore-modifiers;
       };
 
-      thumb_layer: thumb_layer {
+      tm: thumb_mods {
           compatible = "zmk,behavior-hold-tap";
           flavor = "balanced";
           tapping-term-ms = <175>;
@@ -43,9 +43,9 @@
       #define LEFT_HAND_HRM_OVERRIDES
       #define RIGHT_HAND_HRM_OVERRIDES
 
-      #define QUICK_TAP_MS 175
-      #define TAPPING_TERM_MS 280
-      #define PRIOR_IDLE_MS 150
+      #define QUICK_TAP_MS 200
+      #define TAPPING_TERM_MS 300
+      #define PRIOR_IDLE_MS 175
 
       hm_l: homerow_mods_left {
           compatible = "zmk,behavior-hold-tap";
@@ -83,7 +83,7 @@
         &kp TAB    &kp Q         &kp W        &kp E        &kp R         &kp T  &none                                                                        &none &kp Y  &kp U         &kp I        &kp O        &kp P            &kp BSLH
         &kp ESC    &hm_l LCTRL A &hm_l LALT S &hm_l LGUI D &hm_l LSHFT F &kp G  &none          &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL                        &none &kp H  &hm_r RSHFT J &hm_r RGUI K &hm_r RALT L &hm_r RCTRL SEMI &kp SQT
         &skq LSHFT &kp Z         &kp X        &kp C        &kp V         &kp B                         &mo 2 &mo 2                                                 &kp N  &kp M         &kp COMMA    &kp DOT      &kp FSLH         &skq RSHFT
-        &mo 2      &kp GRAVE     &kp CAPS     &kp LEFT     &kp RIGHT                  &thumb_layer 2 BSPC &kp TAB &mo 4 &mo 4 &kp ENTER &thumb_layer 4 SPACE              &kp UP        &kp DOWN     &kp LBKT     &kp RBKT         &mo 2
+        &mo 2      &kp GRAVE     &kp CAPS     &kp LEFT     &kp RIGHT                  &tm 2 BSPC &kp TAB &mo 4 &mo 4 &kp ENTER &tm 4 SPACE              &kp UP        &kp DOWN     &kp LBKT     &kp RBKT         &mo 2
       >;
     };
     engrammer {
