@@ -83,7 +83,7 @@
         &kp TAB    &kp Q         &kp W        &kp E        &kp R         &kp T  &none                                                                        &none &kp Y  &kp U         &kp I        &kp O        &kp P            &kp BSLH
         &kp ESC    &hm_l LCTRL A &hm_l LALT S &hm_l LGUI D &hm_l LSHFT F &kp G  &none          &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL                        &none &kp H  &hm_r RSHFT J &hm_r RGUI K &hm_r RALT L &hm_r RCTRL SEMI &kp SQT
         &skq LSHFT &kp Z         &kp X        &kp C        &kp V         &kp B                         &mo 2 &mo 2                                                 &kp N  &kp M         &kp COMMA    &kp DOT      &kp FSLH         &skq RSHFT
-        &mo 2      &kp GRAVE     &kp CAPS     &kp LEFT     &kp RIGHT                  &tm 2 BSPC &kp TAB &mo 4 &mo 4 &kp ENTER &tm 4 SPACE              &kp UP        &kp DOWN     &kp LBKT     &kp RBKT         &mo 2
+        &mo 2      &kp GRAVE     &kp CAPS     &kp LEFT     &kp RIGHT                  &tm 2 BSPC &tm 5 TAB &mo 4 &mo 4 &kp ENTER &tm 4 SPACE              &kp UP        &kp DOWN     &kp LBKT     &kp RBKT         &mo 2
       >;
     };
     engrammer {
@@ -120,6 +120,15 @@
         &kp HASH  &kp CARET &kp EQUAL &kp UNDER &kp DOLLAR &kp STAR  &none               &trans &trans &trans &trans        &none &kp TILDE &kp AMPS    &kp LBKT &kp RBKT  &kp PLUS  &kp BSLH
         &kp AT    &kp LT    &kp PIPE  &kp MINUS &kp GT     &kp SLASH                            &trans &trans                     &kp SLASH &kp PERCENT &trans   &trans    &trans    &trans
         &kp TILDE &kp AMPS  &kp LBKT  &kp RBKT  &kp PLUS                   &kp BSLH &kp PERCENT &trans &trans &trans &trans                 &kp LPAR    &kp LBKT &kp RBKT  &kp RPAR  &trans
+      >;
+    };
+    workspace {
+      bindings = <
+        &trans &trans &trans &trans &trans &trans &none                                            &none &trans   &trans   &trans &trans    &trans &trans
+        &trans  &kp RA(N1) &kp RA(N2) &kp RA(N3) &kp RA(N4) &kp RA(N5) &none                                      &none    &kp RA(N6)   &kp RA(N7)   &kp RA(N8) &kp RA(N9)    &kp RA(N0)  &trans
+        &trans  &kp LA(H) &kp LA(J) &kp LA(K) &kp LA(L) &trans &none         &trans &trans &trans &trans          &none    &kp LA(L) &kp LA(J) &kp LA(K) &kp LA(L) &trans  &trans
+        &trans  &trans &trans &trans &trans &trans                      &trans &trans                     &trans  &trans   &trans &trans    &trans  &trans
+        &trans  &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans               &trans   &trans &trans    &trans  &trans
       >;
     };
   };
